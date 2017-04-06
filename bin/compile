@@ -201,8 +201,8 @@ deep-cp /app/.heroku/src $BUILD_DIR/.heroku/src
 invoke --version
 
 echo "staring bower"
-python -c 'import pty, sys; pty.spawn(sys.argv[1:])' | invoke create_settings  --settings-path ./wger/settings.py --database-path ./wger/database.sqlite 
-python -c 'import pty, sys; pty.spawn(sys.argv[1:])' | invoke bootstrap_wger --settings-path ./wger/settings.py --no-start-server 
+python -c 'import pty, sys; pty.spawn(sys.argv[1:])' | invoke create_settings  --settings-path ./settings.py --database-path ./wger/database.sqlite 
+python -c 'import pty, sys; pty.spawn(sys.argv[1:])' | invoke bootstrap_wger --settings-path ./settings.py --no-start-server 
 echo "done"
 
 # Django collectstatic support.
