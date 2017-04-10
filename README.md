@@ -35,7 +35,7 @@ A `requirements.txt` file must be present at the root of your application's repo
 
 You can also specify the latest production release of this buildpack for upcoming builds of an existing application:
 
-    $ heroku buildpacks:set https://github.com/andela-brotich/wger-buildpack-python.git
+    $ heroku buildpacks:set https://github.com/LarryWachira/wger-buildpack-python
 
 
 Specify a Python Runtime
